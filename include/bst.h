@@ -2,14 +2,13 @@
 #ifndef INCLUDE_BST_H_
 #define INCLUDE_BST_H_
 #include <algorithm>
-#include <algorithm>
 template<typename T>
 class BST {
  private:
     struct Node {
         T vallue;
         int m;
-        Node* ;
+        Node* r;
         Node* l;
         explicit Node(T vallue) : vallue(vallue), m(1), r(nullptr), l(nullptr) {}
     };
