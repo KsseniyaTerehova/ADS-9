@@ -8,9 +8,9 @@ class BST {
     struct Node {
         T vallue;
         int m;
-        Node* rig;
-        Node* lef;
-        explicit Node(T vallue) : val(vallue), m(1), r(nullptr), l(nullptr) {}
+        Node* ;
+        Node* l;
+        explicit Node(T vallue) : vallue(vallue), m(1), r(nullptr), l(nullptr) {}
     };
 
  public:
