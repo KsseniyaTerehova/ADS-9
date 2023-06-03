@@ -29,12 +29,12 @@ class BST {
         else
             return searchNode(root->r, vallue);
     }
-    int dep() {
-        return getDep(root) - 1;
+    int depth() {
+        return getDepth(root) - 1;
     }
-    int getDep(Node* root) {
+    int getDepth(Node* root) {
         if (root)
-            return std::max(getDep(root->l), getDep(root->r)) + 1;
+            return std::max(getDepth(root->l), getDepth(root->r)) + 1;
         else
             return 0;
     }
